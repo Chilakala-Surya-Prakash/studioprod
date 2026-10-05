@@ -11,5 +11,10 @@
 # Preserve Foreground Service
 -keep class com.example.studioprod.service.StudioAudioService { *; }
 
+# Preserve Data Models and Enums
+-keep class com.example.studioprod.ui.** { *; }
+-keepclassmembers enum * { *; }
+
 # Preserve Compose Runtime
 -keep class androidx.compose.** { *; }
+-dontwarn java.lang.invoke.**

@@ -8,7 +8,7 @@ android {
     namespace = "com.example.studioprod"
     compileSdk = 36
     defaultConfig {
-        applicationId = "com.example.studioprod"
+        applicationId = "com.chilakala.studioprod"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
@@ -21,6 +21,18 @@ android {
         }
     }
 
+    signingConfigs {
+        create("release") {
+            val keystoreFile = file("../keystore/release.jks")
+            if (keystoreFile.exists()) {
+                storeFile = keystoreFile
+                storePassword = "StudioProdRelease2026!"
+                keyAlias = "studioprod"
+                keyPassword = "StudioProdRelease2026!"
+            }
+        }
+    }
+
     externalNativeBuild {
         cmake {
             path = file("src/main/cpp/CMakeLists.txt")
@@ -29,10 +41,10 @@ android {
     }
 
     buildTypes {
-
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {
