@@ -61,23 +61,4 @@
 * **Architecture**: MVVM, Kotlin Coroutines, StateFlow, Foreground Service
 * **Build System**: Gradle Kotlin DSL (`build.gradle.kts`), CMake 3.22+
 
----
 
-## Building & Testing
-
-### Prerequisites
-* JDK 17
-* Android SDK (API 34+)
-* Android NDK (r25+)
-* CMake 3.22.1+
-
-### Build Debug APK
-```bash
-./gradlew assembleDebug
-```
-Output APK: `app/build/outputs/apk/debug/app-debug.apk`
-
-### Run Unit Tests
-```bash
-./gradlew testDebugUnitTest
-```
