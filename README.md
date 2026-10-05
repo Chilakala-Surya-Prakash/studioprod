@@ -3,7 +3,10 @@
 [![Platform](https://img.shields.io/badge/Platform-Android-green.svg)](https://android.com)
 [![Architecture](https://img.shields.io/badge/Architecture-C%2B%2B%20NDK%20%2B%20Jetpack%20Compose-blue.svg)](https://developer.android.com)
 [![Engine](https://img.shields.io/badge/Engine-32--Bit%20Float%20AAudio-orange.svg)](https://developer.android.com/ndk/guides/audio/aaudio)
+[![Download APK](https://img.shields.io/badge/Download-StudioProd%20APK-brightgreen.svg?logo=android)](https://github.com/Chilakala-Surya-Prakash/studioprod/releases/download/v1.0.0/StudioProd-v1.0.0.apk)
 [![License](https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg)](LICENSE)
+
+> 🚀 **[Download StudioProd v1.0.0 APK](https://github.com/Chilakala-Surya-Prakash/studioprod/releases/download/v1.0.0/StudioProd-v1.0.0.apk)** (Direct Download)
 
 **StudioProd** is a production-grade digital audio workstation (DAW) and studio vocal transformation suite engineered for Android. It eliminates the "telephone sound" typical of mobile MEMS microphones by utilizing a real-time 32-bit floating-point C++ DSP pipeline and AAudio low-latency drivers, paired with a modern Jetpack Compose dark studio interface.
 
